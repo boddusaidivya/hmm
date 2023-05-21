@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 100px;
+    
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(250deg, white, rgb(115, 31, 175));
+}
+h1{
+    position: relative;
+    left:40%;
+}
+.container{
+    width:100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform is ease-in;
+}
+.face{
+    position: relative;
+    height: 100px;
+    width:150px;
+    border-radius:50%;
+    background-color:cadetblue;
+}
+.eye1{
+
+    width:20px;
+    height:20px;
+    position:absolute;
+    border-radius: 50%;
+    background-color: black;
+    top:50px;
+    right:30px;
+    
+
+}
+.eye1:hover{
+    transform: scale(2)
+}
+.eye2{
+    width:20px;
+    height:20px;
+    position:relative;
+    border-radius: 50%;
+    background-color: black;
+    left:30px;
+    top:50px ;
+}
+.eye2:hover{
+    transform: scale(2)
+}
+.body{
+    position:relative;
+    height: 150px;
+    width:150px;
+    border-radius: 50px;
+    background-color:darkmagenta;
+    
+}
+
+.hand1{
+    position:absolute;
+    width:30px;
+    height:100px;
+    border-radius: 50px;
+    background-color:blueviolet;
+    left:140px;
+    
+}
+.hand1:hover{
+    transform: rotate(-30deg)
+}
+.hand2{
+    position:absolute;
+    width:30px;
+    height:100px;
+    border-radius:50px;
+    background-color:blueviolet;
+    right:140px;
+}
+.hand2:hover{
+    transform: rotate(90deg)
+}
+.leg1{
+    position:absolute;
+    width:30px;
+    height:60px;
+    border-radius: 30% 30% 30% 30%;
+    background-color:blueviolet;
+    left:90px;
+    top: 120px;
+    padding-top:5px;
+    
+}
+.leg1:hover{
+    transform: rotate(90deg)
+}
+.leg2{
+    position:absolute;
+    width:30px;
+    height:60px;
+    border-radius: 30% 30% 30% 30%;
+    background-color:blueviolet;
+    right:90px;
+    top: 120px;
+    padding-top: 5px;
+}
+.leg2:hover{
+    transform: rotate(90deg)
+}
+    </style>
+</head>
+<body>
+    <h1>Dancing Robot</h1>
+    <div class="container"> 
+    
+    <div class="robo">
+        <div class="face">
+            <div class="eye1"></div>
+            <div class="eye2"></div></div>
+        
+        <div class="body">
+            <div class="hand1"></div>
+            <div class="hand2"></div>
+            <div class="leg1"></div>
+            <div class="leg2"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
